@@ -1,0 +1,42 @@
+{
+  "name": "@koumoul/data-fair-icon-datasets",
+  "version": "0.1.0",
+  "description": "git@github.com:albanm/data-fair-icon-datasets.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albanm/data-fair-icon-datasets.git"
+  },
+  "keywords": [
+    "data-fair",
+    "icons",
+    "mdi"
+  ],
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albanm/data-fair-icon-datasets/issues"
+  },
+  "homepage": "https://github.com/albanm/data-fair-icon-datasets#readme",
+  "dependencies": {
+    "@mdi/svg": "^3.6.95",
+    "JSONStream": "^1.3.5",
+    "axios": "^0.18.0",
+    "child-process-promise": "^2.2.1",
+    "config": "^3.1.0",
+    "form-data": "^2.3.3",
+    "fs-extra": "^8.0.1",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
