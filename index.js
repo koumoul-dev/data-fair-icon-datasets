@@ -38,7 +38,6 @@ async function main () {
   try {
     await axios.delete(`datasets/icons-mdi-${mdiPJson.version}`)
   } catch (err) {
-    console.log('err', err)
     // nothing
   }
 
@@ -50,6 +49,8 @@ async function main () {
     schema
   })).data
   console.log('MDI dataset created/updated', mdiDataset)
+
+  await new Promise(resolve => setTimeout(resolve, 2000))
 
   await pump(
     fs.createReadStream('./node_modules/@mdi/svg/meta.json'),
@@ -102,4 +103,4 @@ async function main () {
   console.log('...done')
 }
 
-main().then(() => process.exit(), err => { console.error('Failure', (err.response && err.response.data) || err); process.exit(1) })
+main().then(() => process.exit(), err => { console.error('Failure', (err.response && err.response) || err); process.exit(1) })
